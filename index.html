@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acino</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="logo_block">
+                <img src="img/logo.png" alt="">
+            </div>
+        </header>
+        <section>
+            <div>
+                <nav class="form-steps">
+                    <div class="form-steps__item step-1 form-steps__item--completed">
+                        <div class="form-steps__item-content">
+                            <span class="form-steps__item-icon"></span>
+                            <span class="form-steps__item-text"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-steps__item step-2">
+                        <div class="form-steps__item-content">
+
+                            <span class="form-steps__item-line"></span>
+
+                        </div>
+                    </div>
+
+                    <div class="form-steps__item step-3">
+                        <div class="form-steps__item-content">
+
+                            <span class="form-steps__item-line"></span>
+
+                        </div>
+                    </div>
+
+                    <div class="form-steps__item step-4">
+                        <div class="form-steps__item-content">
+
+                            <span class="form-steps__item-line"></span>
+
+                        </div>
+                    </div>
+
+                    <div class="form-steps__item step-5">
+                        <div class="form-steps__item-content">
+
+                            <span class="form-steps__item-line"></span>
+
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="container">
+                    <form action="#" method="post" id="raq_questions">
+
+                        <div class="question-title">
+                            <p>Личная информация</p>
+                            <p>Пожалуйста, заполните форму ниже для доступа к информационным ресурсам Acino.</p>
+                        </div>
+
+                        <div class="question-container active_panel" id="question-1">
+                            <!-- Q1. Question for the client? <br/> A. <input type="text" value="" /> -->
+                            <div class="step ">
+                                <label class="lastName">Фамилия</label>
+                                <input type="text" name="surname" placeholder="Петренко" required>
+                            </div>
+                            <div class="step">
+                                <label class="firstname">Имя</label>
+                                <input type="text" name="firstname" placeholder="Василий" required>
+
+                            </div>
+                            <div class="step">
+                                <label class="patronymic">Отчество</label>
+                                <input type="text" name="patronymic" placeholder="Иванович" required>
+                                </label>
+                            </div>
+                            <div class="step">
+                                <label class="phone">Телефон </label>
+                                <input type="tel" id="phone" name="phone" pattern="\+3\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="+3(___)___ -__ -__" required>
+
+                            </div>
+                            <div class="step">
+                                <label class="email">Email</label>
+                                <input type="email" name="email" placeholder="_____ @____________" required autocomplete="off">
+
+                            </div>
+                        </div>
+                        <div class="question-container" id="question-2">
+                            Q2. Question for the client? <br/> A. <input type="text" value="" />
+                        </div>
+                        <div class="question-container" id="question-3">
+                            Q3. Question for the client? <br/> A. <input type="text" value="" />
+                        </div>
+                        <div class="question-container" id="question-4">
+                            Q4. Question for the client? <br/> A. <input type="text" value="" />
+                        </div>
+                        <div class="question-container" id="question-5">
+                            Q5. Question for the client? <br/> A. <input type="text" value="" />
+                        </div>
+
+                    </form>
+
+                    <div class="button-bar">
+                        <!-- <input type="button" value="Back" id="raq_back"> -->
+                        <input type="button" value="Продолжить" id="raq_next">
+                    </div>
+
+                </div>
+
+                <div id="overlay">
+                    <div class="thankyou">
+                        <h3>Thank You!</h3>
+                        <p>Thank you, your form is submited</p>
+                        <input type="button" id="start-over" value="Start Over">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
